@@ -9,19 +9,13 @@
 
 static void SystemClock_Config(void);
 
-// Main program
-
-void main()
+int main()
 {
-	// Configure System Clock
-	SystemClock_Config();
-
-	// Initialize Timer for PWM output
-	BSP_TIMER_PWM_Init();
+	uint8_t i = 0;
 
 	while(1)
 	{
-           // CPU is doing nothing here, and forever...
+		i++;
 	}
 }
 
